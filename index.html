@@ -4,91 +4,139 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Privacidade — Color Sort Eterno</title>
-<style>body{font-family:system-ui,sans-serif;max-width:760px;margin:2rem auto;padding:0 1rem;line-height:1.6}h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:2rem}small{color:#666}</style>
+<style>
+:root{color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,sans-serif;max-width:760px;margin:0 auto;
+padding:5.2rem 1rem 3rem;line-height:1.65;background:#000;color:#f2f2f2;font-size:16px}
+a{color:#9da8ff;text-decoration:none;border-bottom:1px solid #9da8ff55;
+transition:color .15s,border-color .15s,background .15s}
+a:hover,a:focus-visible{color:#fff;border-color:#fff;background:#6574f722;outline:none}
+.lang{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;gap:.5rem;
+justify-content:center;padding:.7rem 1rem;background:rgba(0,0,0,.85);
+backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid #333}
+.lang a{flex:1;max-width:12rem;text-align:center;border:1px solid #9da8ff88;
+border-radius:999px;padding:.55rem .9rem;font-weight:600;font-size:.95rem;color:#cfd5ff;border-bottom:1px solid #9da8ff88}
+.lang a:hover,.lang a:focus-visible{background:#6574f7;color:#fff;border-color:#6574f7}.lang a.active{background:#6574f7;color:#fff;border-color:#6574f7}
+h1{font-size:1.35rem;margin:1.5rem 0 .25rem;scroll-margin-top:5rem}
+section.card{background:#111;border:1px solid #2a2a2a;border-radius:14px;
+padding:1rem 1.1rem;margin:.9rem 0}
+section.card h2{font-size:1.02rem;margin:0 0 .5rem;color:#9da8ff}
+section.card p,section.card ul{margin:.5rem 0;font-size:.95rem}
+section.card ul{padding-left:1.2rem}
+section.card li{margin:.3rem 0}
+code{background:#2a2a2a;padding:.05em .35em;border-radius:5px;font-size:.88em;
+word-break:break-word}
+small{color:#bbb}
+hr{border:none;border-top:1px solid #333;margin:2rem 0}
+@media(min-width:600px){body{font-size:17px}h1{font-size:1.6rem}}
+</style>
 </head>
 <body>
-<h1>Política de Privacidade — Color Sort Eterno</h1>
-<p><small>Última atualização: 3 de novembro de 2026 · Pacote: <code>com.colorsorteterno.app</code></small></p>
+<h1 id="pt">Política de Privacidade — Color Sort Eterno</h1>
+<p><small>Última atualização: 18 de novembro de 2026 · Pacote: <code>com.colorsorteterno.app</code></small></p>
+<nav class="lang"><a href="#pt" data-lang="pt" class="active">Português</a><a href="#en" data-lang="en">English</a><a href="#es" data-lang="es">Español</a></nav>
 
-<h2>1. Resumo</h2>
-<p>O Color Sort Eterno é um jogo de ordenar líquidos por cor que funciona <strong>offline</strong>, sem conta e sem login. Não coletamos nome, e-mail, fotos ou localização. Os únicos dados tratados são os exigidos pelos serviços do Google para exibir anúncios e processar a compra "sem anúncios", além do progresso do jogo salvo <strong>apenas no seu aparelho</strong>.</p>
-
-<h2>2. Dados armazenados no aparelho (não saem do celular)</h2>
+<section class="card"><h2>1. Resumo</h2>
+<p>O Color Sort Eterno é um jogo de ordenar líquidos por cor que funciona <strong>100% offline</strong>, sem conta e sem login. Não coletamos nome, e-mail, fotos, localização ou contatos. Não temos servidor próprio: todo o progresso fica <strong>somente no seu aparelho</strong>. Os únicos dados tratados são os exigidos pelo Google para exibir anúncios e processar a compra "sem anúncios".</p></section><section class="card"><h2>2. Dados no seu aparelho (armazenamento local)</h2>
 <ul>
-<li>Progresso das partidas, tempos, recordes e vitórias;</li>
-<li>Preferências (idioma, estilo de tubo, som ligado/desligado);</li>
-<li>Status premium e controle do período de 5 min após anúncio recompensado.</li>
+<li>Progresso da campanha: nível atual, vitórias e recorde de tempo por dificuldade;</li>
+<li>Partida em andamento, salva automaticamente (nível, tubos, jogadas e tempo decorrido);</li>
+<li>Preferências: idioma, estilo dos tubos (frasco, taça ou béquer), símbolos nas cores, som e tema claro/escuro;</li>
+<li>Controle do tubo extra: horário do último pedido;</li>
+<li>Status "sem anúncios".</li>
 </ul>
-<p>Esses dados ficam em armazenamento local (SharedPreferences) e são apagados se você desinstalar o app ou limpar os dados.</p>
-
-<h2>3. Dados coletados automaticamente por terceiros</h2>
-<h3>3.1 Google AdMob (anúncios)</h3>
-<p>Na versão gratuita exibimos banner, intersticial e anúncio recompensado via <strong>Google AdMob</strong>. O AdMob pode coletar:</p>
+<p>Ficam em armazenamento local (SharedPreferences) e são apagados se você desinstalar o app ou limpar os dados. Nada disso sai do aparelho.</p></section><section class="card"><h2>3. Anúncios (Google AdMob)</h2>
+<p>Na versão gratuita exibimos:</p>
 <ul>
-<li>Identificador de publicidade do Android (AD_ID);</li>
-<li>Informações do dispositivo (modelo, sistema, idioma), endereço IP aproximado e dados de desempenho/ diagnóstico para entrega e medição de anúncios e combate a fraudes.</li>
+<li><strong>Banner</strong> na tela da partida;</li>
+<li><strong>Intersticial</strong> (tela cheia) a cada 3 partidas concluídas;</li>
+<li><strong>Anúncio com recompensa</strong> (opcional): quando o tabuleiro trava e você já usou o desfazer gratuito do intervalo de 5 minutos, pode assistir por vontade própria para liberar uma nova jogada de desfazer. Assistir é sempre uma escolha — nunca é obrigatório para jogar.</li>
 </ul>
-<p>Base legal (LGPD/GDPR): legítimo interesse na monetização + consentimento quando exigido pela plataforma. Para saber como o Google usa esses dados, veja <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> e <a href="https://support.google.com/admob/answer/6128543">o guia do AdMob</a>.</p>
-<h3>3.2 Google Play Billing (compra "sem anúncios")</h3>
-<p>A compra opcional que remove anúncios é processada pelo <strong>Google Play</strong>. Não recebemos nem armazenamos dados do seu cartão — apenas o status "premium ativo". O Google trata os dados de pagamento conforme a política dele.</p>
-
-<h2>4. Compartilhamento</h2>
-<p>Não vendemos dados pessoais. Compartilhamos apenas o necessário com o Google (AdMob e Play Billing) para anúncios, compras e segurança. Podemos divulgar dados se exigido por lei.</p>
-
-<h2>5. Publicidade personalizada — suas escolhas</h2>
+<p>O AdMob pode coletar: ID de publicidade do Android, modelo do aparelho, sistema, idioma, IP aproximado e dados de desempenho para entrega, medição e antifraude (<a href="https://policies.google.com/privacy">Política do Google</a>). Comprar o "sem anúncios" desliga o banner, o intersticial e o anúncio de desfazer por completo.</p></section><section class="card"><h2>4. Compra "sem anúncios" (Google Play Billing)</h2>
+<p>A compra opcional é processada pelo <strong>Google Play</strong> — nunca vemos seu cartão. Guardamos apenas o status "sem anúncios" no seu aparelho. Se você reinstalar, o Google Play reconhece a compra automaticamente pela sua conta Google. Além de remover todos os anúncios, a compra libera um tubo extra a cada hora em qualquer partida.</p></section><section class="card"><h2>5. O que NÃO fazemos</h2>
+<p>Não vendemos dados. Não compartilhamos com ninguém além do Google (anúncios/compras). Não temos servidor, não há rastreamento entre apps, não há perfil publicitário próprio e não há ranking online — nenhum dado seu sai do aparelho além do que o Google trata para anúncios e compras.</p></section><section class="card"><h2>6. Suas escolhas</h2>
 <ul>
-<li>Android: <em>Configurações → Privacidade → Anúncios → Excluir ID de publicidade</em> para sair da personalização;</li>
-<li>Comprar a versão <strong>sem anúncios</strong> desativa o SDK de anúncios (nenhum anúncio é inicializado nem carregado para premium).</li>
+<li>Anúncios personalizados: Android <em>Configurações → Privacidade → Anúncios → Excluir ID de publicidade</em>;</li>
+<li>Apagar tudo: desinstale o app — todo o progresso, recordes e preferências são apagados junto (não há cópia em servidor).</li>
+</ul></section><section class="card"><h2>7. Crianças</h2>
+<p>Jogo casual para o público geral, <strong>não direcionado a menores de 13 anos</strong>. Não coletamos dados de crianças diretamente.</p></section><section class="card"><h2>8. Contato</h2>
+<p>Dúvidas ou pedidos (acesso, correção, exclusão): escreva para o e-mail de suporte informado na página do app na Google Play.</p></section><section class="card"><h2>9. Alterações</h2>
+<p>Publicaremos atualizações nesta mesma página.</p></section><hr>
+<h1 id="en">Privacy Policy (English)</h1>
+<p><small>Last updated: November 18, 2026 · Package: <code>com.colorsorteterno.app</code></small></p>
+<section class="card"><h2>1. Summary</h2>
+<p>Color Sort Eterno is a color-sorting game that works <strong>100% offline</strong>, with no account and no login. We collect no name, email, photos, location or contacts. We have no server of our own: all progress stays <strong>on your device only</strong>. The only data handled is what Google requires to serve ads and process the "remove ads" purchase.</p></section><section class="card"><h2>2. On-device data (local storage)</h2>
+<ul>
+<li>Campaign progress: current level, wins and best time per difficulty;</li>
+<li>Game in progress, auto-saved (level, tubes, moves and elapsed time);</li>
+<li>Preferences: language, tube style (flask, wine glass or beaker), color symbols, sound and light/dark theme;</li>
+<li>Extra-tube control: time of the last request;</li>
+<li>"Remove ads" status.</li>
 </ul>
-
-<h2>6. Crianças</h2>
-<p>O jogo é casual e apto para todas as idades, mas <strong>não é direcionado especificamente a menores de 13 anos</strong> e não coletamos dados de crianças diretamente. Anúncios seguem as políticas para famílias do Google. Pais/responsáveis podem usar o controle parental do Play e o ID de publicidade do aparelho para limitar personalização.</p>
-
-<h2>7. Segurança e retenção</h2>
-<p>Dados locais: retidos até desinstalação/limpeza. Dados de anúncios/compras: retidos pelo Google conforme as políticas dele. Protegemos o app com boas práticas do Android; nenhum método é 100% seguro.</p>
-
-<h2>8. Seus direitos (LGPD/GDPR)</h2>
-<p>Você pode pedir acesso, correção, portabilidade ou eliminação dos dados locais (apagando os dados do app) e gerenciar o AD_ID nas configurações. Para solicitações sobre dados tratados pelo Google, use as ferramentas do Google. Responderemos solicitações diretas pelo contato abaixo.</p>
-
-<h2>9. Contato</h2>
-<p>Para solicitações de privacidade, use o campo de contato (e-mail de suporte) informado na ficha do app na Google Play.</p>
-
-<h2>10. Mudanças</h2>
-<p>Atualizaremos esta página e a data no topo quando a política mudar. O uso contínuo após mudanças implica concordância.</p>
-
-<hr>
-<h1>Privacy Policy — Color Sort Eterno</h1>
-<p><small>Last updated: November 3, 2026 · Package: <code>com.colorsorteterno.app</code></small></p>
-<h2>1. Overview</h2>
-<p>Color Sort Eterno is an offline color-sorting game with no account and no login. We do not collect your name, email, photos, or precise location. The only data handled is what Google's services require for ads and the "remove ads" purchase, plus game progress stored <strong>only on your device</strong>.</p>
-<h2>2. On-device data</h2>
-<p>Level progress, best times, wins, preferences (language, tube style, sound), and premium/reward cooldown status — stored locally, deleted on uninstall or data clear.</p>
-<h2>3. Third-party data</h2>
-<p><strong>Google AdMob</strong> (free version: banner, interstitial, rewarded) may collect the Android advertising ID, device/OS/language info, approximate IP, and performance/diagnostic data for ad delivery, measurement, and fraud prevention (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>). <strong>Google Play Billing</strong> processes the optional "remove ads" purchase; we only see premium status, never card data.</p>
-<h2>4. Sharing</h2>
-<p>We never sell personal data. Data is shared only with Google as needed for ads, purchases, and security, or as required by law.</p>
-<h2>5. Your choices</h2>
-<p>Opt out of personalized ads via Android <em>Settings → Privacy → Ads → Delete advertising ID</em>. Buying premium disables the ads SDK entirely.</p>
-<h2>6. Children</h2>
-<p>Family-friendly but <strong>not specifically directed to children under 13</strong>; we collect no children's data directly. Parents can use Play parental controls and the device ad-ID setting.</p>
-<h2>7. Contact</h2>
-<p>For privacy requests, use the contact field (support email) listed on the app's Google Play page.</p>
-<hr>
-<h1>Política de Privacidad — Color Sort Eterno</h1>
-<p><small>Última actualización: 3 de noviembre de 2026 · Paquete: <code>com.colorsorteterno.app</code></small></p>
-<h2>1. Resumen</h2>
-<p>Color Sort Eterno es un juego de ordenar líquidos por color que funciona <strong>sin conexión</strong>, sin cuenta y sin inicio de sesión. No recopilamos nombre, correo electrónico, fotos ni ubicación precisa. Los únicos datos tratados son los que exigen los servicios de Google para mostrar anuncios y procesar la compra «sin anuncios», además del progreso del juego guardado <strong>solo en tu dispositivo</strong>.</p>
-<h2>2. Datos en el dispositivo</h2>
-<p>Progreso de niveles, mejores tiempos, victorias, preferencias (idioma, estilo de tubo, sonido) y estado premium/enfriamiento de recompensa — almacenados localmente, eliminados al desinstalar o borrar datos.</p>
-<h2>3. Datos de terceros</h2>
-<p><strong>Google AdMob</strong> (versión gratuita: banner, intersticial, recompensado) puede recopilar el ID de publicidad de Android, información del dispositivo/sistema/idioma, IP aproximada y datos de rendimiento/diagnóstico para entrega y medición de anuncios y prevención de fraude (<a href="https://policies.google.com/privacy">Política de privacidad de Google</a>). <strong>Google Play Billing</strong> procesa la compra opcional «sin anuncios»; solo vemos el estado premium, nunca los datos de la tarjeta.</p>
-<h2>4. Compartir datos</h2>
-<p>Nunca vendemos datos personales. Solo compartimos con Google lo necesario para anuncios, compras y seguridad, o cuando lo exija la ley.</p>
-<h2>5. Tus opciones</h2>
-<p>Desactiva la personalización en <em>Ajustes → Privacidad → Anuncios → Eliminar ID de publicidad</em>. Comprar la versión premium desactiva el SDK de anuncios por completo.</p>
-<h2>6. Niños</h2>
-<p>Apto para toda la familia, pero <strong>no dirigido específicamente a menores de 13 años</strong>; no recopilamos datos de niños directamente. Los padres pueden usar el control parental de Play y el ajuste del ID de publicidad.</p>
-<h2>7. Contacto</h2>
-<p>Para solicitudes de privacidad, usa el campo de contacto (correo de soporte) indicado en la ficha del juego en Google Play.</p>
+<p>Stored in local storage (SharedPreferences) and deleted if you uninstall the app or clear its data. None of it leaves your device.</p></section><section class="card"><h2>3. Ads (Google AdMob)</h2>
+<p>The free version shows:</p>
+<ul>
+<li>A <strong>banner</strong> on the game screen;</li>
+<li>An <strong>interstitial</strong> (full screen) every 3 completed matches;</li>
+<li>An <strong>optional rewarded ad</strong>: when the board is stuck and your free undo for the 5-minute window is used up, you may watch it voluntarily to unlock a new undo. Watching is always a choice — never required to play.</li>
+</ul>
+<p>AdMob may collect the Android advertising ID, device/OS/language info, approximate IP and performance data for delivery, measurement and anti-fraud (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>). Buying "remove ads" disables the banner, the interstitial and the undo ad entirely.</p></section><section class="card"><h2>4. "Remove ads" purchase (Google Play Billing)</h2>
+<p>The optional purchase is processed by <strong>Google Play</strong> — we never see your card. We only keep the "remove ads" status on your device. If you reinstall, Google Play automatically recognizes the purchase through your Google account. Besides removing every ad, the purchase unlocks one extra tube per hour in any match.</p></section><section class="card"><h2>5. What we do NOT do</h2>
+<p>We never sell data. We share with nobody beyond Google (ads/purchases). We have no server, no cross-app tracking, no proprietary ad profiling and no online leaderboard — no data of yours leaves the device beyond what Google handles for ads and purchases.</p></section><section class="card"><h2>6. Your choices</h2>
+<ul>
+<li>Personalized ads: Android <em>Settings → Privacy → Ads → Delete advertising ID</em>;</li>
+<li>Delete everything: uninstall the app — all progress, records and preferences are wiped with it (there is no server copy).</li>
+</ul></section><section class="card"><h2>7. Children</h2>
+<p>A casual game for the general public, <strong>not directed at children under 13</strong>. We do not collect children's data directly.</p></section><section class="card"><h2>8. Contact</h2>
+<p>Questions or requests (access, correction, deletion): write to the support email listed on the app's Google Play page.</p></section><section class="card"><h2>9. Changes</h2>
+<p>We will post updates on this same page.</p></section><hr>
+<h1 id="es">Política de Privacidad — Color Sort Eterno</h1>
+<p><small>Última actualización: 18 de noviembre de 2026 · Paquete: <code>com.colorsorteterno.app</code></small></p>
+<section class="card"><h2>1. Resumen</h2>
+<p>Color Sort Eterno es un juego de ordenar líquidos por color que funciona <strong>100% sin conexión</strong>, sin cuenta. No recopilamos nombre, correo, fotos, ubicación ni contactos. No tenemos servidor propio: todo el progreso queda <strong>solo en tu dispositivo</strong>. Solo tratamos lo que Google exige para anuncios y la compra «sin anuncios».</p></section><section class="card"><h2>2. Datos en tu dispositivo (almacenamiento local)</h2>
+<ul>
+<li>Progreso de la campaña: nivel actual, victorias y mejor tiempo por dificultad;</li>
+<li>Partida en curso, guardada automáticamente (nivel, tubos, jugadas y tiempo transcurrido);</li>
+<li>Preferencias: idioma, estilo de los tubos (frasco, copa o vaso de precipitados), símbolos en los colores, sonido y tema claro/oscuro;</li>
+<li>Control del tubo extra: hora del último pedido;</li>
+<li>Estado «sin anuncios».</li>
+</ul>
+<p>Se guardan en almacenamiento local (SharedPreferences) y se borran si desinstalas la app o borras sus datos. Nada de esto sale del dispositivo.</p></section><section class="card"><h2>3. Anuncios (Google AdMob)</h2>
+<p>En la versión gratuita mostramos:</p>
+<ul>
+<li><strong>Banner</strong> en la pantalla de juego;</li>
+<li><strong>Intersticial</strong> (pantalla completa) cada 3 partidas completadas;</li>
+<li><strong>Anuncio con recompensa</strong> (opcional): cuando el tablero se traba y ya usaste el deshacer gratis del intervalo de 5 minutos, puedes verlo por voluntad propia para liberar un nuevo deshacer. Verlo siempre es una elección — nunca es obligatorio para jugar.</li>
+</ul>
+<p>AdMob puede recopilar: ID de publicidad de Android, modelo del dispositivo, sistema, idioma, IP aproximada y datos de rendimiento para entrega, medición y antifraude (<a href="https://policies.google.com/privacy">Política de Google</a>). Comprar «sin anuncios» desactiva el banner, el intersticial y el anuncio de deshacer por completo.</p></section><section class="card"><h2>4. Compra «sin anuncios» (Google Play Billing)</h2>
+<p>La compra opcional la procesa <strong>Google Play</strong> — nunca vemos tu tarjeta. Solo guardamos el estado «sin anuncios» en tu dispositivo. Si reinstalas, Google Play reconoce la compra automáticamente con tu cuenta de Google. Además de quitar todos los anuncios, la compra desbloquea un tubo extra cada hora en cualquier partida.</p></section><section class="card"><h2>5. Lo que NO hacemos</h2>
+<p>No vendemos datos. No compartimos con nadie más que Google (anuncios/compras). No tenemos servidor, no hay rastreo entre apps, ni perfil publicitario propio, ni ranking en línea — ningún dato tuyo sale del dispositivo más allá de lo que Google trata para anuncios y compras.</p></section><section class="card"><h2>6. Tus opciones</h2>
+<ul>
+<li>Anuncios personalizados: Android <em>Ajustes → Privacidad → Anuncios → Eliminar ID de publicidad</em>;</li>
+<li>Borrar todo: desinstala la app — todo el progreso, récords y preferencias se borran con ella (no hay copia en servidor).</li>
+</ul></section><section class="card"><h2>7. Niños</h2>
+<p>Juego casual para público general, <strong>no dirigido a menores de 13 años</strong>. No recopilamos datos de niños directamente.</p></section><section class="card"><h2>8. Contacto</h2>
+<p>Dudas o solicitudes (acceso, corrección, eliminación): escribe al correo de soporte indicado en la página de la app en Google Play.</p></section><section class="card"><h2>9. Cambios</h2>
+<p>Publicaremos las actualizaciones en esta misma página.</p></section>
+<script>
+(function(){
+var links={pt:document.querySelector('[data-lang="pt"]'),en:document.querySelector('[data-lang="en"]'),es:document.querySelector('[data-lang="es"]')};
+function setActive(id){for(var k in links){if(links[k])links[k].classList.toggle('active',k===id);}}
+function tops(){var y=window.scrollY,o={};
+['pt','en','es'].forEach(function(i){var h=document.getElementById(i);
+o[i]=h?h.getBoundingClientRect().top+y:0;});return o;}
+function cur(){var t=tops(),line=window.scrollY+window.innerHeight*0.5;
+if(line>=t.es)return 'es';if(line>=t.en)return 'en';return 'pt';}
+var tick=false;
+function upd(){tick=false;setActive(cur());}
+window.addEventListener('scroll',function(){if(tick)return;tick=true;
+requestAnimationFrame(upd);},{passive:true});
+window.addEventListener('resize',upd);
+for(var k in links){(function(id){links[id].addEventListener('click',function(){setActive(id);});})(k);}
+upd();
+})();
+</script>
 </body>
 </html>
